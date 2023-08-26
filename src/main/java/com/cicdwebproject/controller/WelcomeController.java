@@ -11,7 +11,7 @@ import java.util.Date;
 @Controller
 @Slf4j
 public class WelcomeController {
-    @GetMapping("/")
+    @GetMapping("/hello-world")
     public String index(Model model) {
         log.debug("welcome to my page");
         model.addAttribute("msg", Message.HELLO.getMsg());
